@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Addendum: Lights Out Game Development</title>
+  <style>
+    /* Your additional CSS styles can go here */
+    /* Ensure the styles match the overall design of your document */
+  </style>
+<link rel="stylesheet" href="addendum.css">
+</head>
+<body>
+    <h1>Game Development Overview</h1>
+
+    <h2>Initial Concept and Framework</h2>
+    <h3>Purpose</h3>
+    <p>Aiming to construct a puzzle game based on a grid system, featuring dynamic elements like interactive squares, alongside mechanisms to track player moves and time.</p>
+    <h3>Obstacles</h3>
+    <p>Key focus was on clarifying game mechanics and ensuring a user-friendly interface.</p>
+    <h3>Approach</h3>
+    <p>Implemented a basic grid structure complemented with a real-time move tracker and timer to provide instant player feedback.</p>
+
+    <h2>Game Mechanics Development</h2>
+    <h3>Goal</h3>
+    <p>Focused on developing a game mechanism where player interactions would alter the states of grid squares.</p>
+    <h3>Difficulties</h3>
+    <p>The primary hurdle was to flawlessly manage the square state transitions, particularly for squares at the grid's periphery.</p>
+    <h3>Resolution</h3>
+    <p>Introduced a function named 'toggleSquare' to modify the status of neighboring squares, including the one directly interacted with by the player.</p>
+
+    <h2>Monitoring Time and Moves</h2>
+    <h3>Aim</h3>
+    <p>To keep a record of the time spent and the moves made by the player during the game.</p>
+    <h3>Challenges</h3>
+    <p>Key focus was on the precision of the timekeeping function and aligning the move count with player actions.</p>
+    <h3>Solution</h3>
+    <p>Utilized 'setInterval' for the timer, updating it every second, and updated the move count upon each player interaction with the squares.</p>
+
+    <h2>Setting Victory and Defeat Conditions</h2>
+    <h3>Objective</h3>
+    <p>To define clear winning and losing scenarios within the game.</p>
+    <h3>Complications</h3>
+    <p>Focused on figuring out the optimal approach to assess these conditions timely.</p>
+    <h3>Strategy</h3>
+    <p>Implemented a 'checkGameState' function to evaluate after each move if the player has achieved victory or exceeded the move limit.</p>
+
+    <h2>Player Interaction Feedback</h2>
+    <h3>Intent</h3>
+    <p>To offer immediate feedback to the player on their game outcome, whether a win or a loss.</p>
+    <h3>Challenges</h3>
+    <p>Finding an effective method to convey the game results to the player.</p>
+    <h3>Solution</h3>
+    <p>Opted for basic 'window.alert' pop-ups to inform players about their victory or defeat, noting potential areas for enhanced user interaction.</p>
+
+    <h2>Reflections and Learnings</h2>
+    <ul>
+        <li><strong>Structural Clarity and Simplicity:</strong> Segregating the game's features into distinct, well-defined functions was pivotal in managing its complexity and enhancing code clarity.</li>
+        <li><strong>Comprehensive Testing and Borderline Scenarios:</strong> Rigorous testing was imperative, particularly for scenarios involving interactions with edge squares of the grid.</li>
+        <li><strong>Importance of User Experience:</strong> Recognized the critical balance between functional efficiency and user satisfaction. Future enhancements could focus on advanced user interface elements and accessibility considerations.</li>
+        <li><strong>Performance Aspects:</strong> Recognized the significance of performance, especially in terms of DOM interactions and game state management, for more intricate or larger-scale grid games.</li>
+    </ul>
+
+    <h2>Final Thoughts</h2>
+    <p>This project underscored the value of definitive design goals, exhaustive testing, and harmonizing functional adequacy with user experience. Prospective improvements may involve more refined state management systems, improved UI/UX designs, and potentially more elaborate game dynamics to heighten player engagement.</p>
+	<a href="index.html">Back to Game</a> <!-- Link to go back to the game -->
+
+</body>
+
+</html>
